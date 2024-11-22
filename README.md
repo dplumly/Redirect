@@ -3,5 +3,5 @@
 QR code URL is this repo and will redirect you to google.com
 <br>
 <br>
-<img src="assets/Redirect-Github.png.png">
+<img src="./assets/Redirect-Github.png" width="350">
 
