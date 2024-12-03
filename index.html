@@ -6,12 +6,13 @@
 		<meta name="keywords" content="">
 		<meta name="description" content="">
 		<meta name="author" content="">
-		<title></title>
+		<title>Redirect</title>
 
 	</head>
  
 	<body>
-		<h2 style="display: table; margin: 0 auto;">Redirect</h2>
+		<!-- <h2 style="display: table; margin: 0 auto;">Redirect</h2> -->
+		<div id="animation-container" style="display: table; margin: 100px auto; height: 200px;"></div>
 
 		<script>
 			//Replace the URL for your redirect
@@ -19,14 +20,30 @@
 		</script>
 
 
+
+
 		<!-- Tracking - Add your own if you fork-->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-N2NKTSKF4G"></script>
+
 		<script>
 			window.dataLayer = window.dataLayer || [];
 			function gtag(){dataLayer.push(arguments);}
 			gtag('js', new Date());
 
 			gtag('config', 'G-N2NKTSKF4G');
+		</script>
+
+
+		<!-- Lottie loading animation-->
+		<script src="js/lottie.js" type="text/javascript"></script>
+		<script>
+				const animation = lottie.loadAnimation({
+				container: document.getElementById('animation-container'),
+				renderer: 'svg',
+				loop: true,
+				autoplay: true,
+				path: 'js/3dots.json'
+			});
 		</script>
 	</body>
 </html>
